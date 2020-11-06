@@ -9,7 +9,7 @@ Our connection will be hold during all the requests to another services.
 
 And now the main trick of this approach: Even if we add a @Transactional on our truly transactional points, we still have our connection on hold until the end of the request scope.
 
-It happens becase as I said before, at the beginning of the request, our hibernate session is opened and it closes only when the request finishes.
+It happens because as I said before, at the beginning of the request, our hibernate session is opened and it closes only when the request finishes.
 
 In this simple example, we can check that.
 
