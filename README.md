@@ -20,9 +20,9 @@ In this simple example, we can check that.
 2. Run the application
 3. Open the terminal and execute ``` $ curl localhost:8080/simple & curl localhost:8080/simple/1 ```
 
-Everything works fine. Our @Transactional annotations are ensuring the beginning and the commit of the transactions.
+Everything works fine. Our @Transactional annotations ensures the beginning and the commit of the transactions.
 
-But now, lets try with Open Session In View enabled, **which is the default for all applications that not have been explicitly disabled it**.
+But now, let's try with Open Session In View enabled, **which is the default for all applications that does not have been explicitly disabled it**.
 
 1. Open src/main/resources/application.yml and set the spring.jpa.open-in-view to "true"
 2. Run the application
